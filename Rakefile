@@ -12,7 +12,7 @@ namespace :travis_ci do
   desc 'Ensure compatible Rubygems version for Ruby 1.8'
   task :compatible_rubygems do
     if RUBY_VERSION == '1.8.7'
-      system "rvm rubygems latest-1.8"
+      system "rvm rubygems latest-1.8 --force"
     end
   end
 
